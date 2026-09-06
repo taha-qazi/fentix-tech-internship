@@ -1,0 +1,656 @@
+﻿/* ==========================================================================
+   Catchhub Landing Page Stylesheet
+   Pixel-Perfect Implementation matching design.jpg
+   ========================================================================== */
+
+/* --------------------------------------------------------------------------
+   CSS Reset & Variables
+   -------------------------------------------------------------------------- */
+:root {
+  --font-heading: 'Montserrat', -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif;
+  --font-body: 'Open Sans', -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif;
+
+  --color-heading: #231f20;
+  --color-subheading: #7c7c7c;
+  --color-body-text: #666666;
+  --color-android: #8ec03f;
+  --color-android-hover: #7eb332;
+  --color-apple: #111111;
+  --color-apple-hover: #262626;
+  --color-link: #0099ff;
+  --color-link-hover: #007acc;
+
+  --container-width: 1420px;
+}
+
+*, *::before, *::after {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+html {
+  scroll-behavior: smooth;
+  font-size: 16px;
+  -webkit-text-size-adjust: 100%;
+}
+
+body {
+  font-family: var(--font-body);
+  background-color: #ffffff;
+  color: var(--color-body-text);
+  line-height: 1.6;
+  width: 100%;
+  overflow-x: hidden;
+  position: relative;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+/* --------------------------------------------------------------------------
+   Layout Containers
+   -------------------------------------------------------------------------- */
+.page-wrapper {
+  position: relative;
+  width: 100%;
+  overflow-x: hidden;
+}
+
+.container {
+  width: 100%;
+  max-width: var(--container-width);
+  margin: 0 auto;
+  padding: 0 40px;
+}
+
+/* Background Curve Graphics */
+.bg-wave-container {
+  position: absolute;
+  top: 720px;
+  left: 0;
+  width: 100%;
+  height: 600px;
+  pointer-events: none;
+  z-index: -1;
+}
+
+.bg-wave-svg {
+  width: 100%;
+  height: 100%;
+  display: block;
+}
+
+/* --------------------------------------------------------------------------
+   1. Hero Section
+   -------------------------------------------------------------------------- */
+.hero-section {
+  padding: 85px 0 70px;
+  position: relative;
+}
+
+.hero-container {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 50px;
+}
+
+.hero-left {
+  flex: 1 1 560px;
+  max-width: 630px;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+}
+
+.hero-brand {
+  margin-bottom: 28px;
+}
+
+.brand-logo {
+  max-width: 410px;
+  width: 100%;
+  height: auto;
+  display: block;
+}
+
+.hero-copy {
+  margin-bottom: 38px;
+}
+
+.hero-heading {
+  text-align: left;
+}
+
+.hero-heading span {
+  display: inline-block;
+}
+
+.hero-heading {
+  font-family: var(--font-heading);
+  font-size: clamp(20px, 2.5vw, 41px);
+  font-weight: 800;
+  letter-spacing: 2.5px;
+  color: var(--color-heading);
+  line-height: 1.25;
+  margin-bottom: 12px;
+  text-transform: uppercase;
+}
+
+.hero-subheading {
+  font-family: var(--font-body);
+  font-size: clamp(17px, 1.8vw, 27px);
+  font-weight: 300;
+  color: var(--color-subheading);
+  line-height: 1.35;
+}
+
+.hero-right {
+  flex: 1 1 650px;
+  display: flex;
+  justify-content: flex-end;
+  align-items: center;
+}
+
+.top-screens-img {
+  max-width: 740px;
+  width: 100%;
+  height: auto;
+  display: block;
+  filter: drop-shadow(0 15px 35px rgba(0, 0, 0, 0.07));
+  transition: transform 0.4s ease;
+}
+
+.top-screens-img:hover {
+  transform: translateY(-5px);
+}
+
+/* --------------------------------------------------------------------------
+   Store Action Buttons
+   -------------------------------------------------------------------------- */
+.store-buttons {
+  display: inline-flex;
+  flex-wrap: wrap;
+  gap: 18px;
+  align-items: center;
+}
+
+.store-btn {
+  display: inline-flex;
+  align-items: center;
+  padding: 11px 26px;
+  border-radius: 9px;
+  text-decoration: none;
+  color: #ffffff;
+  min-width: 228px;
+  box-shadow: 0 4px 15px rgba(0, 0, 0, 0.12);
+  transition: all 0.28s cubic-bezier(0.165, 0.84, 0.44, 1);
+  user-select: none;
+}
+
+.store-btn:hover {
+  transform: translateY(-3px);
+  box-shadow: 0 8px 22px rgba(0, 0, 0, 0.18);
+}
+
+.store-btn:active {
+  transform: translateY(-1px);
+}
+
+.btn-android {
+  background-color: var(--color-android);
+}
+
+.btn-android:hover {
+  background-color: var(--color-android-hover);
+}
+
+.btn-apple {
+  background-color: var(--color-apple);
+}
+
+.btn-apple:hover {
+  background-color: var(--color-apple-hover);
+}
+
+.btn-icon {
+  margin-right: 14px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-shrink: 0;
+}
+
+.btn-icon svg {
+  display: block;
+}
+
+.btn-text-group {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  line-height: 1.18;
+}
+
+.btn-caption {
+  font-family: var(--font-body);
+  font-size: 12px;
+  font-weight: 400;
+  color: rgba(255, 255, 255, 0.95);
+  letter-spacing: 0.1px;
+}
+
+.btn-title {
+  font-family: var(--font-heading);
+  font-size: 21.5px;
+  font-weight: 700;
+  letter-spacing: -0.2px;
+  color: #ffffff;
+}
+
+/* --------------------------------------------------------------------------
+   2. Feature Sections Common Styles
+   -------------------------------------------------------------------------- */
+.section {
+  position: relative;
+}
+
+.feature-container {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 70px;
+}
+
+.feature-mockup-col {
+  flex: 1 1 52%;
+  display: flex;
+  align-items: center;
+}
+
+.feature-text-col {
+  flex: 1 1 48%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.feature-content-card {
+  max-width: 600px;
+  text-align: center;
+  margin: 0 auto;
+}
+
+.feature-heading {
+  font-family: var(--font-heading);
+  font-size: clamp(26px, 3vw, 44px);
+  font-weight: 700;
+  letter-spacing: 6px;
+  color: var(--color-heading);
+  margin-bottom: 24px;
+  text-transform: uppercase;
+}
+
+.feature-description {
+  font-family: var(--font-body);
+  font-size: clamp(18px, 2vw, 32px);
+  font-weight: 300;
+  line-height: 1.52;
+  color: var(--color-body-text);
+}
+
+.mockup-figure {
+  margin: 0;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 100%;
+}
+
+.screens-img {
+  max-width: 100%;
+  height: auto;
+  display: block;
+}
+
+/* --------------------------------------------------------------------------
+   Section Specific Layouts
+   -------------------------------------------------------------------------- */
+
+/* Channels Section */
+.channels-section {
+  padding: 100px 0 110px;
+}
+
+.channels-figure {
+  justify-content: flex-start;
+}
+
+.sec-screens-img {
+  max-width: 760px;
+  width: 100%;
+  filter: drop-shadow(0 20px 45px rgba(0, 0, 0, 0.08));
+  transition: transform 0.4s ease;
+}
+
+.sec-screens-img:hover {
+  transform: translateY(-5px);
+}
+
+/* Messages Section */
+.messages-section {
+  padding: 90px 0 110px;
+}
+
+.messages-layout {
+  justify-content: space-between;
+}
+
+.messages-figure {
+  justify-content: flex-end;
+}
+
+.thhh-screens-img {
+  max-width: 610px;
+  width: 100%;
+  filter: drop-shadow(0 20px 45px rgba(0, 0, 0, 0.08));
+  transition: transform 0.4s ease;
+}
+
+.thhh-screens-img:hover {
+  transform: translateY(-5px);
+}
+
+/* In Future Section */
+.future-section {
+  padding: 80px 0 110px;
+  position: relative;
+}
+
+.category-strip-container {
+  width: 100%;
+  max-width: 1200px;
+  margin: 0 auto 55px;
+  padding: 0 30px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.vectors-banner-img {
+  width: 100%;
+  max-width: 1100px;
+  height: auto;
+  display: block;
+  opacity: 0.92;
+  transition: opacity 0.3s ease;
+}
+
+.vectors-banner-img:hover {
+  opacity: 1;
+}
+
+.future-figure {
+  justify-content: flex-start;
+}
+
+.for-screens-img {
+  max-width: 670px;
+  width: 100%;
+  filter: drop-shadow(0 20px 45px rgba(0, 0, 0, 0.08));
+  transition: transform 0.4s ease;
+}
+
+.for-screens-img:hover {
+  transform: translateY(-5px);
+}
+
+/* --------------------------------------------------------------------------
+   5. Footer & Call to Action
+   -------------------------------------------------------------------------- */
+.footer-section {
+  padding: 70px 0 120px;
+  text-align: center;
+  background-color: #ffffff;
+}
+
+.footer-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+
+.footer-cta-title {
+  font-family: var(--font-body);
+  font-size: clamp(20px, 2vw, 30px);
+  font-weight: 400;
+  color: #333333;
+  margin-bottom: 28px;
+  letter-spacing: -0.2px;
+}
+
+.store-buttons-center {
+  justify-content: center;
+  margin-bottom: 38px;
+}
+
+.footer-contact {
+  font-family: var(--font-body);
+  font-size: clamp(15px, 1.3vw, 20px);
+  color: #555555;
+  margin-bottom: 48px;
+  letter-spacing: 0.1px;
+}
+
+.contact-link {
+  color: var(--color-link);
+  font-weight: 600;
+  text-decoration: none;
+  letter-spacing: 0.4px;
+  padding-bottom: 1px;
+  border-bottom: 2px solid transparent;
+  transition: all 0.2s ease;
+}
+
+.contact-link:hover {
+  color: var(--color-link-hover);
+  border-bottom-color: var(--color-link-hover);
+}
+
+.footer-branding {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-top: 10px;
+}
+
+.peratude-logo {
+  width: 150px;
+  height: auto;
+  display: block;
+  transition: opacity 0.25s ease;
+}
+
+.peratude-logo:hover {
+  opacity: 0.85;
+}
+
+/* --------------------------------------------------------------------------
+   Responsive Media Queries
+   -------------------------------------------------------------------------- */
+
+/* Large Tablets & Laptops (<= 1180px) */
+@media screen and (max-width: 1180px) {
+  .hero-container {
+    gap: 30px;
+  }
+
+  .feature-container {
+    gap: 40px;
+  }
+
+  .top-screens-img,
+  .sec-screens-img,
+  .thhh-screens-img,
+  .for-screens-img {
+    max-width: 95%;
+  }
+}
+
+/* Tablets (<= 920px) */
+@media screen and (max-width: 920px) {
+  .hero-container {
+    flex-direction: column;
+    text-align: center;
+  }
+
+  .hero-left {
+    align-items: center;
+    max-width: 100%;
+  }
+
+  .brand-logo {
+    margin: 0 auto;
+  }
+
+  .store-buttons {
+    justify-content: center;
+  }
+
+  .hero-right {
+    justify-content: center;
+    width: 100%;
+    margin-top: 30px;
+  }
+
+  /* Feature Sections Stacking */
+  .feature-container {
+    flex-direction: column;
+    text-align: center;
+  }
+
+  .channels-layout {
+    flex-direction: column-reverse;
+  }
+
+  .messages-layout {
+    flex-direction: column;
+  }
+
+  .future-layout {
+    flex-direction: column-reverse;
+  }
+
+  .channels-figure,
+  .messages-figure,
+  .future-figure {
+    justify-content: center;
+  }
+
+  .feature-mockup-col,
+  .feature-text-col {
+    width: 100%;
+    justify-content: center;
+  }
+
+  .feature-content-card {
+    margin: 25px auto;
+  }
+
+  .channels-section,
+  .messages-section,
+  .future-section {
+    padding: 60px 0;
+  }
+
+  .category-strip-container {
+    padding: 0 15px;
+    margin-bottom: 30px;
+  }
+
+  .vectors-banner-img {
+    max-width: 100%;
+  }
+}
+
+/* Mobile Screens (<= 600px) */
+@media screen and (max-width: 600px) {
+  .container {
+    padding: 0 20px;
+  }
+
+  .hero-section {
+    padding: 45px 0 35px;
+  }
+
+  .brand-logo {
+    max-width: 280px;
+  }
+
+  .hero-heading {
+  text-align: left;
+}
+
+.hero-heading span {
+  display: inline-block;
+}
+
+.hero-heading {
+    font-size: 20px;
+    letter-spacing: 1.2px;
+    line-height: 1.35;
+  }
+
+  .hero-subheading {
+    font-size: 16px;
+  }
+
+  .store-buttons {
+    flex-direction: column;
+    width: 100%;
+    max-width: 310px;
+    margin: 0 auto;
+  }
+
+  .store-btn {
+    width: 100%;
+    min-width: 0;
+    justify-content: center;
+    padding: 10px 18px;
+  }
+
+  .feature-heading {
+    font-size: 24px;
+    letter-spacing: 3.5px;
+    margin-bottom: 16px;
+  }
+
+  .feature-description {
+    font-size: 16px;
+    line-height: 1.5;
+  }
+
+  .category-strip-container {
+    padding: 0 10px;
+    margin-bottom: 25px;
+  }
+
+  .footer-section {
+    padding: 45px 0 60px;
+  }
+
+  .footer-cta-title {
+    font-size: 20px;
+    margin-bottom: 22px;
+  }
+
+  .footer-contact {
+    font-size: 14px;
+  }
+
+  .peratude-logo {
+    width: 120px;
+  }
+}
+

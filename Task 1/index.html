@@ -1,0 +1,229 @@
+﻿<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="Catchhub - Watch. Communicate. Create. Everything you need to socialise.">
+  <title>Catchhub - Watch. Communicate. Create.</title>
+  
+  <!-- Favicon -->
+  <link rel="icon" type="image/jpeg" href="assets/favicon.jpg">
+
+  <!-- Google Fonts: Montserrat & Open Sans -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;500;600;700;800;900&family=Open+Sans:wght@300;400;600&display=swap" rel="stylesheet">
+
+  <!-- Main Stylesheet -->
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+  <!-- Background Decorative Curved Wave -->
+  <div class="bg-wave-container" aria-hidden="true">
+    <svg class="bg-wave-svg" viewBox="0 0 1920 600" fill="none" xmlns="http://www.w3.org/2000/svg" preserveAspectRatio="none">
+      <path d="M0,0 C800,80 1450,420 1920,280 L1920,600 L0,600 Z" fill="rgba(248, 249, 251, 0.65)"/>
+      <path d="M0,15 C820,100 1440,430 1920,290" stroke="#edf0f4" stroke-width="2"/>
+    </svg>
+  </div>
+
+  <main class="page-wrapper">
+
+    <!-- 1. HERO SECTION -->
+    <section class="section hero-section" id="hero">
+      <div class="container hero-container">
+        
+        <div class="hero-left">
+          <header class="hero-brand">
+            <img src="assets/logo.png" alt="Catchhub Logo" class="brand-logo" width="410" height="186">
+          </header>
+          
+          <div class="hero-copy">
+            <h1 class="hero-heading"><span>WATCH.</span> <span>COMMUNICATE.</span> <span>CREATE.</span></h1>
+            <p class="hero-subheading">Everything you need to socialise</p>
+          </div>
+
+          <!-- Store Download Buttons -->
+          <div class="store-buttons">
+            <a href="#download" class="store-btn btn-android" aria-label="Available on the Android App Store">
+              <span class="btn-icon">
+                <svg viewBox="0 0 32 32" width="28" height="28" fill="#ffffff">
+                  <line x1="10" y1="8" x2="7" y2="3" stroke="#ffffff" stroke-width="2" stroke-linecap="round"/>
+                  <line x1="22" y1="8" x2="25" y2="3" stroke="#ffffff" stroke-width="2" stroke-linecap="round"/>
+                  <path d="M7 13.5 C7 8.5 10.5 6 16 6 C21.5 6 25 8.5 25 13.5 Z"/>
+                  <circle cx="11.5" cy="10" r="1.2" fill="#8ec03f" class="android-eye-green"/>
+                  <circle cx="20.5" cy="10" r="1.2" fill="#8ec03f" class="android-eye-green"/>
+                  <path d="M7 15.5 C7 14.8 7.5 14.5 8 14.5 L24 14.5 C24.5 14.5 25 14.8 25 15.5 L25 24 C25 24.8 24.2 25.5 23.5 25.5 L8.5 25.5 C7.8 25.5 7 24.8 7 24 Z"/>
+                  <rect x="3" y="15" width="2.8" height="8" rx="1.4" fill="#ffffff"/>
+                  <rect x="26.2" y="15" width="2.8" height="8" rx="1.4" fill="#ffffff"/>
+                  <rect x="10" y="25" width="3" height="5.5" rx="1.5" fill="#ffffff"/>
+                  <rect x="19" y="25" width="3" height="5.5" rx="1.5" fill="#ffffff"/>
+                </svg>
+              </span>
+              <span class="btn-text-group">
+                <span class="btn-caption">Available on the Android</span>
+                <span class="btn-title">App Store</span>
+              </span>
+            </a>
+
+            <a href="#download" class="store-btn btn-apple" aria-label="Download on the Apple App Store">
+              <span class="btn-icon">
+                <svg viewBox="0 0 170 170" width="26" height="26" fill="#ffffff">
+                  <path d="M150.37 130.25c-2.45 5.66-5.35 10.87-8.71 15.66-4.58 6.53-8.33 11.05-11.22 13.56-4.48 4.12-9.28 6.23-14.42 6.35-3.69 0-8.14-1.05-13.32-3.18-5.19-2.12-9.97-3.17-14.34-3.17-4.58 0-9.49 1.05-14.75 3.17-5.26 2.13-9.5 3.24-12.74 3.35-4.35.13-9.16-1.9-14.42-6.08-3.7-3.04-7.7-7.85-12.01-14.42-6.54-9.9-11.45-20.9-14.74-32.99-3.29-12.1-4.94-23.47-4.94-34.12 0-14.56 3.65-26.75 10.95-36.56 7.3-9.82 16.59-14.8 27.86-14.96 4.35 0 9.29 1.15 14.83 3.46 5.53 2.3 9.4 3.51 11.6 3.63 1.95 0 6.01-1.34 12.17-4.01 6.16-2.67 11.51-3.83 16.06-3.48 11.75.98 21.05 5.76 27.9 14.34-10.22 6.19-15.22 15.02-15.02 26.49.22 9.02 3.69 16.68 10.42 22.98 6.73 6.3 14.88 9.87 24.44 10.72-2.17 6.74-4.94 13.56-8.31 20.46zM119.22 31.84c0-7.39 2.66-14.4 7.97-21.04 5.32-6.63 12.16-10.8 20.52-12.5.33 1.3.49 2.4.49 3.27 0 7.39-2.83 14.51-8.49 21.36-5.65 6.85-12.61 10.87-20.89 12.07-.11-1.09-.17-2.14-.17-3.16z"/>
+                </svg>
+              </span>
+              <span class="btn-text-group">
+                <span class="btn-caption">Download on the</span>
+                <span class="btn-title">App Store</span>
+              </span>
+            </a>
+          </div>
+        </div>
+
+        <div class="hero-right">
+          <figure class="mockup-figure hero-figure">
+            <img src="assets/top_screens.png" alt="Catchhub app interface screens preview" class="screens-img top-screens-img" width="876" height="732">
+          </figure>
+        </div>
+
+      </div>
+    </section>
+
+    <!-- 2. CHANNELS SECTION -->
+    <section class="section channels-section" id="channels">
+      <div class="container feature-container channels-layout">
+        
+        <div class="feature-mockup-col channels-mockup-col">
+          <figure class="mockup-figure channels-figure">
+            <img src="assets/sec_screens.png" alt="Catchhub channels showcase screens" class="screens-img sec-screens-img" width="1661" height="1831">
+          </figure>
+        </div>
+
+        <div class="feature-text-col">
+          <div class="feature-content-card">
+            <h2 class="feature-heading">CHANNELS</h2>
+            <p class="feature-description">
+              Enjoy the videos and music you love.<br>
+              Create your own business<br>
+              or entertainment channel.
+            </p>
+          </div>
+        </div>
+
+      </div>
+    </section>
+
+    <!-- 3. MESSAGES SECTION -->
+    <section class="section messages-section" id="messages">
+      <div class="container feature-container messages-layout">
+        
+        <div class="feature-text-col">
+          <div class="feature-content-card">
+            <h2 class="feature-heading">MESSAGES</h2>
+            <p class="feature-description">
+              Communicate seamlessly.<br>
+              Create your own professional<br>
+              or social group chat
+            </p>
+          </div>
+        </div>
+
+        <div class="feature-mockup-col messages-mockup-col">
+          <figure class="mockup-figure messages-figure">
+            <img src="assets/thhh_screens.png" alt="Catchhub messages chat screen interface" class="screens-img thhh-screens-img" width="766" height="807">
+          </figure>
+        </div>
+
+      </div>
+    </section>
+
+    <!-- 4. IN FUTURE SECTION -->
+    <section class="section future-section" id="in-future">
+      
+      <!-- Category Icons Banner (Foods, Events, Party, Metro, Jobs, Housing, Places) -->
+      <div class="category-strip-container">
+        <img src="assets/vectors.png" alt="Categories: Foods, Events, Party, Metro, Jobs, Housing, Places" class="vectors-banner-img" width="1552" height="215">
+      </div>
+
+      <div class="container feature-container future-layout">
+        
+        <div class="feature-mockup-col future-mockup-col">
+          <figure class="mockup-figure future-figure">
+            <img src="assets/for_screens.png" alt="Catchhub future features screens" class="screens-img for-screens-img" width="864" height="1070">
+          </figure>
+        </div>
+
+        <div class="feature-text-col">
+          <div class="feature-content-card">
+            <h2 class="feature-heading">IN FUTURE</h2>
+            <p class="feature-description">
+              Communicate seamlessly.<br>
+              Create your own professional<br>
+              or social group chat
+            </p>
+          </div>
+        </div>
+
+      </div>
+    </section>
+
+    <!-- 5. FOOTER & CALL-TO-ACTION SECTION -->
+    <footer class="footer-section" id="download">
+      <div class="container footer-container">
+        
+        <h3 class="footer-cta-title">For download click here:</h3>
+
+        <!-- Centered Download Buttons -->
+        <div class="store-buttons store-buttons-center">
+          <a href="#download" class="store-btn btn-android" aria-label="Available on the Android App Store">
+            <span class="btn-icon">
+              <svg viewBox="0 0 32 32" width="28" height="28" fill="#ffffff">
+                <line x1="10" y1="8" x2="7" y2="3" stroke="#ffffff" stroke-width="2" stroke-linecap="round"/>
+                <line x1="22" y1="8" x2="25" y2="3" stroke="#ffffff" stroke-width="2" stroke-linecap="round"/>
+                <path d="M7 13.5 C7 8.5 10.5 6 16 6 C21.5 6 25 8.5 25 13.5 Z"/>
+                <circle cx="11.5" cy="10" r="1.2" fill="#8ec03f" class="android-eye-green"/>
+                <circle cx="20.5" cy="10" r="1.2" fill="#8ec03f" class="android-eye-green"/>
+                <path d="M7 15.5 C7 14.8 7.5 14.5 8 14.5 L24 14.5 C24.5 14.5 25 14.8 25 15.5 L25 24 C25 24.8 24.2 25.5 23.5 25.5 L8.5 25.5 C7.8 25.5 7 24.8 7 24 Z"/>
+                <rect x="3" y="15" width="2.8" height="8" rx="1.4" fill="#ffffff"/>
+                <rect x="26.2" y="15" width="2.8" height="8" rx="1.4" fill="#ffffff"/>
+                <rect x="10" y="25" width="3" height="5.5" rx="1.5" fill="#ffffff"/>
+                <rect x="19" y="25" width="3" height="5.5" rx="1.5" fill="#ffffff"/>
+              </svg>
+            </span>
+            <span class="btn-text-group">
+              <span class="btn-caption">Available on the Android</span>
+              <span class="btn-title">App Store</span>
+            </span>
+          </a>
+
+          <a href="#download" class="store-btn btn-apple" aria-label="Download on the Apple App Store">
+            <span class="btn-icon">
+              <svg viewBox="0 0 170 170" width="26" height="26" fill="#ffffff">
+                <path d="M150.37 130.25c-2.45 5.66-5.35 10.87-8.71 15.66-4.58 6.53-8.33 11.05-11.22 13.56-4.48 4.12-9.28 6.23-14.42 6.35-3.69 0-8.14-1.05-13.32-3.18-5.19-2.12-9.97-3.17-14.34-3.17-4.58 0-9.49 1.05-14.75 3.17-5.26 2.13-9.5 3.24-12.74 3.35-4.35.13-9.16-1.9-14.42-6.08-3.7-3.04-7.7-7.85-12.01-14.42-6.54-9.9-11.45-20.9-14.74-32.99-3.29-12.1-4.94-23.47-4.94-34.12 0-14.56 3.65-26.75 10.95-36.56 7.3-9.82 16.59-14.8 27.86-14.96 4.35 0 9.29 1.15 14.83 3.46 5.53 2.3 9.4 3.51 11.6 3.63 1.95 0 6.01-1.34 12.17-4.01 6.16-2.67 11.51-3.83 16.06-3.48 11.75.98 21.05 5.76 27.9 14.34-10.22 6.19-15.22 15.02-15.02 26.49.22 9.02 3.69 16.68 10.42 22.98 6.73 6.3 14.88 9.87 24.44 10.72-2.17 6.74-4.94 13.56-8.31 20.46zM119.22 31.84c0-7.39 2.66-14.4 7.97-21.04 5.32-6.63 12.16-10.8 20.52-12.5.33 1.3.49 2.4.49 3.27 0 7.39-2.83 14.51-8.49 21.36-5.65 6.85-12.61 10.87-20.89 12.07-.11-1.09-.17-2.14-.17-3.16z"/>
+              </svg>
+            </span>
+            <span class="btn-text-group">
+              <span class="btn-caption">Download on the</span>
+              <span class="btn-title">App Store</span>
+            </span>
+          </a>
+        </div>
+
+        <!-- Contact Support Link -->
+        <p class="footer-contact">
+          Any questions? Feel free to <a href="mailto:info@catchhub.com" class="contact-link">CONTACT US</a>
+        </p>
+
+        <!-- Peratude Brand Emblem -->
+        <div class="footer-branding">
+          <img src="assets/peratude.png" alt="Peratude Logo" class="peratude-logo" width="169" height="174">
+        </div>
+
+      </div>
+    </footer>
+
+  </main>
+
+</body>
+</html>
+

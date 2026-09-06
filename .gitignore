@@ -1,0 +1,11 @@
+﻿# Ignore archives and raw unzipped assets
+*.zip
+Task 1/Catchhub/
+Task 1/Catchhub_.zip
+__MACOSX/
+
+# Temporary / OS files
+.DS_Store
+Thumbs.db
+*.log
+node_modules/
