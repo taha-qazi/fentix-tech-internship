@@ -1,4 +1,4 @@
-﻿# 🚀 Fentix Tech Web Development Internship
+# 🚀 Fentix Tech Web Development Internship
 
 This repository documents my complete learning journey, project submissions, and progress throughout the **Fentix Tech Web Development Internship**.
 
@@ -20,7 +20,7 @@ The goal is to maintain consistency, solve problems with strong engineering fund
 
 | Task | Title | Tech Stack | Status | Directory |
 | :--- | :--- | :--- | :--- | :--- |
-| **Task 01** | **Catchhub Landing Page** | HTML5, CSS3, Responsive Design | ✅ Completed | [View Task 01](./Task%201/) |
+| **Task 01** | **Catchhub Landing Page** | HTML5, CSS3, Responsive Design | ✅ Completed | [View Task 01](./Task-01/) |
 | **Task 02** | *Upcoming Assignment* | *TBD* | ⏳ Queued | — |
 | **Task 03** | *Upcoming Assignment* | *TBD* | ⏳ Queued | — |
 
