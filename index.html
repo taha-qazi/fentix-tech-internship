@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Fentix Tech Internship Portfolio</title>
+    <style>
+        :root {
+            --primary: #009999;
+            --bg-color: #f4f7f6;
+            --card-bg: #ffffff;
+            --text-main: #333333;
+            --text-muted: #666666;
+        }
+
+        body {
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            background-color: var(--bg-color);
+            margin: 0;
+            padding: 0;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            min-height: 100vh;
+        }
+
+        .portfolio-container {
+            background: var(--card-bg);
+            padding: 40px 50px;
+            border-radius: 12px;
+            box-shadow: 0 10px 30px rgba(0, 0, 0, 0.05);
+            max-width: 600px;
+            width: 90%;
+            text-align: center;
+        }
+
+        h1 {
+            color: var(--text-main);
+            margin-bottom: 10px;
+            font-size: 2rem;
+        }
+
+        p.subtitle {
+            color: var(--text-muted);
+            margin-bottom: 30px;
+            font-size: 1.1rem;
+        }
+
+        .task-list {
+            list-style: none;
+            padding: 0;
+            margin: 0;
+            display: grid;
+            gap: 15px;
+        }
+
+        .task-link {
+            display: block;
+            text-decoration: none;
+            color: var(--primary);
+            background-color: rgba(0, 153, 153, 0.05);
+            border: 2px solid var(--primary);
+            padding: 15px 20px;
+            border-radius: 8px;
+            font-size: 1.2rem;
+            font-weight: 600;
+            transition: all 0.3s ease;
+        }
+
+        .task-link:hover {
+            background-color: var(--primary);
+            color: #ffffff;
+            transform: translateY(-2px);
+            box-shadow: 0 4px 12px rgba(0, 153, 153, 0.2);
+        }
+
+        .task-link span {
+            display: block;
+            font-size: 0.9rem;
+            font-weight: normal;
+            margin-top: 5px;
+            opacity: 0.9;
+        }
+    </style>
+</head>
+<body>
+    <div class="portfolio-container">
+        <h1>Internship Tasks</h1>
+        <p class="subtitle">Fentix Tech Internship Portfolio</p>
+        
+        <ul class="task-list">
+            <li>
+                <a href="Task-01/" class="task-link">
+                    Task 01
+                    <span>Basic Landing Page</span>
+                </a>
+            </li>
+            <li>
+                <a href="Task-02/" class="task-link">
+                    Task 02
+                    <span>Catalog-Z Clone (Flexbox)</span>
+                </a>
+            </li>
+            <!-- Future tasks will be added here -->
+        </ul>
+    </div>
+</body>
+</html>
