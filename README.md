@@ -1,38 +1,15 @@
-# 🚀 Fentix Tech Web Development Internship
+# Fentix Tech - Full Stack Web Development Internship
 
-This repository documents my complete learning journey, project submissions, and progress throughout the **Fentix Tech Web Development Internship**.
+This repository contains the web applications, responsive user interfaces, and backend systems developed during my comprehensive Full Stack Web Development internship at Fentix Tech. 
 
----
-
-## 📖 About The Internship
-
-During this internship, I am progressively building end-to-end web development skills across the full-stack path:
-- **Core Frontend:** HTML5, CSS3, Responsive Web Design, Bootstrap
-- **Dynamic JavaScript:** Modern ES6+, DOM manipulation, and asynchronous programming
-- **Frontend Frameworks:** React.js, component-based architectures, and state management
-- **Backend & Database:** Node.js, Express.js, and MongoDB (RESTful APIs, full-stack integration)
-
-The goal is to maintain consistency, solve problems with strong engineering fundamentals, and produce clean, pixel-perfect, production-ready applications.
-
----
+The codebase reflects a progressive journey through various domains of web development, starting with foundational HTML, CSS, Bootstrap, and responsive design, and expanding into dynamic programming with JavaScript, building single-page applications with React, and developing robust backend APIs with Node.js and MongoDB. It serves as a complete portfolio of my hands-on experience utilizing industry-standard web technologies to solve real-world problems and build full-stack web solutions.
 
 ## 📂 Repository Structure & Completed Tasks
 
-| Task | Title | Tech Stack | Status | Directory |
+| Task | Title | Tech Stack | Live Demo | Directory |
 | :--- | :--- | :--- | :--- | :--- |
-| **Task 01** | **Catchhub Landing Page** | HTML5, CSS3, Responsive Design | ✅ Completed | [View Task 01](./Task-01/) |
-| **Task 02** | *Upcoming Assignment* | *TBD* | ⏳ Queued | — |
-| **Task 03** | *Upcoming Assignment* | *TBD* | ⏳ Queued | — |
-
----
-
-## 🌟 Task 01 Highlights (Catchhub Landing Page)
-- **Reference Design**: Exact pixel-perfect recreation of `design.jpg`.
-- **Layout & Structure**: Clean semantic HTML5 and fluid CSS3 flexbox/grid layout.
-- **Visual Accuracy**: High-fidelity typography (Montserrat & Open Sans), custom SVG App Store & Android download badges, and section wave dividers.
-- **Responsiveness**: Fully responsive across Desktop (1920px), Tablet, and Mobile (<600px).
-
----
+| **Task 01** | Catchhub Landing Page | HTML, CSS, Responsive Design | [View Live](https://ubiquitous-truffle-046b17.netlify.app) | [Task-01/](./Task-01/) |
+| **Task 02** | Catalog-Z Clone | HTML, CSS, Flexbox | [View Live](https://statuesque-sundae-89ca70.netlify.app/Task-02/) | [Task-02/](./Task-02/) |
 
 ## 👨‍💻 Author
 
